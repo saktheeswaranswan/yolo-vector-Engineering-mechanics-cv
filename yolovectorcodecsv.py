@@ -7,7 +7,7 @@ import math
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # Load YOLOv3 model for classification
-net = cv2.dnn.readNet('yolov3-tiny.weights', 'yolov3-tiny.cfg')
+net = cv2.dnn.readNet('face-yolov3-tiny_41000.weights', 'face-yolov3-tiny.cfg')
 
 # Load COCO class names
 with open('obj.names', 'r') as f:
